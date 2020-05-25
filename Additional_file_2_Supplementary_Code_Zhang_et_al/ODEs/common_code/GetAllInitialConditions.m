@@ -6,3 +6,4 @@ for j = 1:length(fromInitialCondition)
     res(:, j) = rand(trajectoryNumber, 1)*(toInitialCondition(j)-fromInitialCondition(j)) ...
     + fromInitialCondition(j);
 end
+
