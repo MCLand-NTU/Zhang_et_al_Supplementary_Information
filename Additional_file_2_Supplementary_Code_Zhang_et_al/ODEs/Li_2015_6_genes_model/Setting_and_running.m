@@ -1,15 +1,16 @@
 %% Setting_and_running.m implements the algorithm to calculate the potential landscape, plot the figures in 3D view and Top view, 
 % and finally record the time it takes.
 
-% Author: Xiaomeng Zhang and Ket Hing Chong
+% Author: Xiaomeng Zhang, Ket Hing Chong and Lin Zhu
 % School of Computer Science and Engineering
 % Nanyang Technological University
 % Singapore
 % Email: kething@yahoo.com.sg
-% Last revision: 7 Setp 2018
+% Last revision: 24 May 2020
 
 clear all;
 close all;
+clc;
 
 addpath('../common_code'); % to access the common MATLAB files
 % time in clock to record the start time
@@ -38,6 +39,9 @@ trajectoryNumber = 100000;
 
 % set the number of grid box size (100 x 100)
 splitNumber = 100;
+
+% if execute PCA dimensionality reduction set exe_dr=true
+exe_dr=false;      % without PCA dimensionality reduction set exe_dr=false
 
 % Call the DrawLandscape function to draw landscape:
 DrawLandscape;
