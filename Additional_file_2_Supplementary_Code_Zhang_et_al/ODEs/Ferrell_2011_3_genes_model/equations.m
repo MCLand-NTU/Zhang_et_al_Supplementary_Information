@@ -9,7 +9,7 @@ n1=8; n2=8; n3=8;
 
 % Define the equations according to the ODEs  
 % Model equations given in
-% Ferrell James E, Tsai Tony Y-C, Yang Q. Modeling the Cell Cycle: Why Do Certain Circuits Oscillate? Cell. 2011;144(6):874-85.
+% Ferrell JamesÂ E, Tsai TonyÂ Y-C, Yang Q. Modeling the Cell Cycle: Why Do Certain Circuits Oscillate? Cell. 2011;144(6):874-85.
 % CDK1a
 dy(1)=alpha1-beta1*y(1)*y(3)^n1/(K1^n1+y(3)^n1);
 
@@ -20,3 +20,4 @@ dy(2)=alpha2*(1-y(2))*y(1)^n2/(K2^n2+y(1)^n2)-beta2*y(2);
 dy(3)=alpha3*(1-y(3))*y(2)^n3/(K3^n3+y(2)^n3)-beta3*y(3);
 
 end
+
